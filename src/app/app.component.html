@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, user-scalable-no, initial-scale-1, maximun-scale=1, minimun-scale-1">
+</head>
+<body>
+<header>
+  <img id="logo" src="/assets/css/img/logo.png">
+    <ul>
+      <li><a [routerLink]="['/galeria']" [routerLinkActive]="['actived']">amigurimis</a></li>
+      <li><a [routerLink]="['/indumentaria']" [routerLinkActive]="['actived']">indumentaria</a></li>
+      <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+    </ul>
+  <div class="icon-menu">
+    <input type="checkbox" class="check_box" id="checkbox1">
+    <label for="checkbox1"></label>
+  </div>
+</header>
+  <section id="content">
+      <router-outlet></router-outlet>
+  </section>
+</body>
+
+<footer>
+  AmigurumisMA.com
+</footer>
+</html>
