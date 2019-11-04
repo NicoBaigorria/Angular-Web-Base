@@ -8,11 +8,11 @@ router.post('/send-email', async (req, res) => {
     contentHTML = `
         <h1>User Information</h1>
         <ul>
-            <li>Nombre: ${name}</li>
+            <li>Nombre: ${nombre}</li>
             <li>Email: ${email}</li>
-            <li>Telefono: ${phone}</li>
+            <li>Telefono: ${telefono}</li>
         </ul>
-        <p>${message}</p>
+        <p>${mensaje}</p>
     `;
     
     const transporter = nodemailer.createTransport({
