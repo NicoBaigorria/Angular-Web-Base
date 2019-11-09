@@ -1,8 +1,16 @@
 <form action="/send-email" method="POST">
     <h2>CONTACTO</h2>
-    <input type="text" name="nombre" placeholder="Nombre" required>
-    <input type="email" name="correo" placeholder="Correo" required>
-    <input type="text" name="telefono" placeholder="Telefono" required>
-    <textarea name="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
+    <div class="form-group">
+        <input type="text" name="nombre" placeholder="Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Correo" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" name="phone" placeholder="Telefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <textarea name="mensaje" placeholder="Escriba aqui su mensaje" class="form-control"></textarea>
+    </div>
     <input type="submit" value="ENVIAR" id="boton">
 </form>

@@ -1,4 +1,4 @@
-const { Router } =require('express');
+const { Router } = require('express');
 const nodemailer = require('nodemailer');
 const router = Router();
 
@@ -8,11 +8,11 @@ router.post('/send-email', async (req, res) => {
     contentHTML = `
         <h1>User Information</h1>
         <ul>
-            <li>Nombre: ${nombre}</li>
+            <li>Nombre: ${name}</li>
             <li>Email: ${email}</li>
-            <li>Telefono: ${telefono}</li>
+            <li>Telefono: ${phone}</li>
         </ul>
-        <p>${mensaje}</p>
+        <p>${message}</p>
     `;
     
     const transporter = nodemailer.createTransport({
@@ -39,7 +39,7 @@ router.post('/send-email', async (req, res) => {
 
     //INSERTAR MODIFICACION DE CSS AL ENVIAR MENSAJE
 
-    res.send('receied');
+    res.send('received');
 });
 
 module.exports = router;
